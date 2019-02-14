@@ -21,6 +21,6 @@ This application also comes with Electron Rebuild which rebuilds native Node.js 
 
 ## Future Feature Updates
 
--Support for building Installers
--Many more to come 
+- Support for building Installers
+- Many more to come 
 
