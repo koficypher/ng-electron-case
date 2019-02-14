@@ -1,27 +1,26 @@
 # NgElectronCase
 
+Electron boilerplate with Angular 7 on the frontend for building desktop applications. It comes with an angular module [NGxElectron](https://github.com/ThorstenHans/ngx-electron) which is an angular wrapper for interacting with electron's renderer API.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Download this repo or git clone this repo with `git clone https://github.com/koficypher/ng-electron-case.git` and run
+this command `npm install` to install all the dependencies for the project.
 
-## Code scaffolding
+Documentation on how to use NGxElectron can be found [here](https://github.com/ThorstenHans/ngx-electron).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
 
-## Build
+Run `npm run electron` to start up the application.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Using Native Modules
 
-## Running unit tests
+This application also comes with Electron Rebuild which rebuilds native Node.js modules against the currently installed Electron version. To use the rebuild feature edit the `package.json` file, in the scripts section where we have the rebuild command with the name of the module you want to rebuild. Further documentation can be found [here](https://github.com/electron/electron-rebuild)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Future Feature Updates
 
-## Running end-to-end tests
+-Support for building Installers
+-Many more to come 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
