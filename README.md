@@ -1,3 +1,5 @@
+[![Known Vulnerabilities](https://snyk.io/test/github/koficypher/ng-electron-case/badge.svg?targetFile=package.json)](https://snyk.io/test/github/koficypher/ng-electron-case?targetFile=package.json)
+
 # NgElectronCase
 
 Electron boilerplate with Angular 7 on the frontend for building desktop applications. It comes with an angular module [NGxElectron](https://github.com/ThorstenHans/ngx-electron) which is an angular wrapper for interacting with electron's renderer API.
@@ -21,6 +23,6 @@ This application also comes with Electron Rebuild which rebuilds native Node.js 
 
 ## Future Feature Updates
 
--Support for building Installers
--Many more to come 
+- Support for building Installers
+- Many more to come 
 
