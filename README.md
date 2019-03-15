@@ -4,7 +4,26 @@
 
 Electron boilerplate with Angular 7 on the frontend for building desktop applications. It comes with an angular module [NGxElectron](https://github.com/ThorstenHans/ngx-electron) which is an angular wrapper for interacting with electron's renderer API.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
+## Features
+
+- Electron's renderer process available as a service in Angular. See [NGxElectron](https://github.com/ThorstenHans/ngx-electron) for in-depth documentation and examples.
+- Electron packager for packaging your finished electron apps. See [Electron-Packager](https://github.com/electron-userland/electron-packager) for getting started and [here](https://github.com/electron-userland/electron-packager/blob/master/docs/api.md) for a deep-dive into their API.
+- Electron Windows Installer for building out installers for windows systems. Also see [Electron-Windows-Installer](https://github.com/electron-userland/electron-installer-windows) for details.
+
+
+## Typical WorkFlow
+- Assuming you have finished building your application, you will first use the Electron packager to package your app into a folder like this:
+  > `electron-packager <sourcedir> <appname> --platform=<platform> --arch=<arch> --out <outputdir>/`
+- It will create the packaged app in the specified `<outputdir>` and you can inspect it to see for yourself
+- After that you will then use the Electron Windows Installer which is the only supported installer as at now to convert your packaged app into a .exe and .msi per the documentation [here](https://github.com/electron-userland/electron-installer-windows) . E.g :
+  > `electron-installer-windows --src packages/<folder-name>/ --config config.json`
+- The above command has a `--config` flag which points to `config.json` file. Create that file in your app directory as it is what the module will look into for configuration options in building your installer.
+
+> - Note the ff
+> - Your app name should be consistent i.e. same name in your package.json and same name in all your configurations
+> - Your package.json file should contain Author object with name, email and url, Name of app and Version as they are mandatory.
+
+
 
 ## Installation
 
@@ -21,8 +40,17 @@ Run `npm run electron` to start up the application.
 
 This application also comes with Electron Rebuild which rebuilds native Node.js modules against the currently installed Electron version. To use the rebuild feature edit the `package.json` file, in the scripts section where we have the rebuild command with the name of the module you want to rebuild. Further documentation can be found [here](https://github.com/electron/electron-rebuild)
 
-## Future Feature Updates
+## Licence
 
-- Support for building Installers
-- Many more to come 
+This project is licenced under MIT licence
+
+## Bugs and Security Issues ??
+
+Kindly email your findings to [me](mailto:skcypher6@gmail.com)
+
+## Want To Collaborate ??
+
+Kindly email [me](mailto:skcypher6@gmail.com)
+
+
 
