@@ -6,7 +6,11 @@ function createWindow() {
   win = new BrowserWindow({
     width: 600,
     height: 600,
-    backgroundColor: '#ffffff'
+    backgroundColor: '#ffffff',
+    webPreferences: {
+      nodeIntegration: true,
+      backgroundThrottling: false
+    }
     // icon: `file://${__dirname}/dist/assets/logo.png`,
     //frame: false, //uncomment this for frameless window
   });
