@@ -42,7 +42,7 @@ This application also comes with Electron Rebuild which rebuilds native Node.js 
 
 ## Tip To Reduce Build Size
 
-Electron packager will use only your dependencies specified in your `package.json` file and also dependcies of those dependencies when packaging your app. I think you are getting the picture. That means you can actually reduce the size of the packaged app if you remove all unecessary packages to the devdepencies section in your `package.json` file. Additional `--prune=true` and using asar builds `--asar` will also add in reducing your build size. But in all, a zipped, minimal Electron application is approximately the same size as the zipped prebuilt binary for a given target platform, target arch, and Electron version.
+Electron packager will use only your dependencies specified in your `package.json` file and also dependcies of those dependencies when packaging your app. I think you are getting the picture. That means you can actually reduce the size of the packaged app if you remove all unecessary packages to the devdepencies section in your `package.json` file. Additional `--prune=true` and using asar builds `--asar` will also add in reducing your build size. But in all, a zipped, minimal Electron application is approximately the same size as the zipped prebuilt binary for a given target platform, target arch, and Electron versions.
 
 ## Licence
 
