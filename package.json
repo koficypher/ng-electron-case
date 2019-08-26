@@ -2,15 +2,12 @@
   "name": "ng-electron-case",
   "version": "0.0.0",
   "main": "main.js",
-  "author": {
-    "name": "Kofi Cypher",
-    "email": "skcypher6@gmail.com",
-    "url": "https://github.com/koficypher"
-  },
+  "author": "Kofi Cypher <skcypher6@gmail.com>"
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
