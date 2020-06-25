@@ -1,4 +1,4 @@
-[![Known Vulnerabilities](https://snyk.io/test/github/koficypher/ng-electron-case/badge.svg?targetFile=package.json)](https://snyk.io/test/github/koficypher/ng-electron-case?targetFile=package.json)
+
 
 # NgElectronCase
 
