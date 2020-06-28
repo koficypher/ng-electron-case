@@ -56,5 +56,8 @@ Kindly email your findings to [me](mailto:skcypher6@gmail.com)
 
 Kindly email [me](mailto:skcypher6@gmail.com)
 
+## Live Reloading
+Live reloading for the renderer process is coming soon....
+
 
 
